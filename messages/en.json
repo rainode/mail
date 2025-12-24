@@ -1,0 +1,70 @@
+{
+  "Common": {
+    "language": "Language",
+    "languageEnglish": "English",
+    "languageJapanese": "日本語",
+    "theme": "Theme",
+    "themeSystem": "System",
+    "themeLight": "Light",
+    "themeDark": "Dark"
+  },
+  "Home": {
+    "kicker": "Temporary email",
+    "title": "Get a disposable inbox in seconds",
+    "subtitle": "Create an address, copy it, and receive messages without registration.",
+    "card1Title": "Instant creation",
+    "card1Desc": "Generate a temporary email address in seconds with just one click",
+    "card2Title": "No registration",
+    "card2Desc": "No sign up required. Start receiving emails immediately",
+    "card3Title": "Auto cleanup",
+    "card3Desc": "Messages automatically delete after 1 hour for your privacy"
+  },
+  "EmailGenerator": {
+    "title": "Create your email",
+    "description": "Pick a domain and generate or type a name.",
+    "domainLabel": "Domain",
+    "domainPlaceholder": "Select domain",
+    "addressLabel": "Address",
+    "addressPlaceholder": "your-name",
+    "emailLabel": "Email",
+    "copied": "Copied to clipboard.",
+    "viewInbox": "View Inbox"
+  },
+  "Inbox": {
+    "title": "Inbox",
+    "copied": "Copied to clipboard.",
+    "back": "Back",
+    "refresh": "Refresh",
+    "autoRefresh": "Auto-refresh (3s)",
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {page} of {totalPages}",
+    "emailCount": "{count, plural, one {# email} other {# emails}}",
+    "empty": "No emails yet",
+    "sendHint": "Send an email to <email>{address}</email> to see it here",
+    "from": "From"
+  },
+  "EmailDetail": {
+    "from": "From",
+    "to": "To",
+    "date": "Date",
+    "htmlView": "HTML View",
+    "plainText": "Plain Text",
+    "htmlTitle": "Email HTML content",
+    "backToInbox": "Back to Inbox",
+    "home": "Home"
+  },
+  "NotFound": {
+    "kicker": "Not found",
+    "title": "Email not found",
+    "description": "The email doesn't exist or has been automatically deleted.",
+    "home": "Go home",
+    "back": "Back"
+  },
+  "Time": {
+    "justNow": "Just now",
+    "minutesAgo": "{count, plural, one {# minute ago} other {# minutes ago}}",
+    "hoursAgo": "{count, plural, one {# hour ago} other {# hours ago}}",
+    "daysAgo": "{count, plural, one {# day ago} other {# days ago}}"
+  }
+}
