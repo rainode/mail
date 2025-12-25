@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Link, Mail, Sparkles } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { EmailGenerator } from "@/components/email-generator";
@@ -28,6 +28,10 @@ export default async function Home() {
           </header>
 
           <EmailGenerator />
+
+          <Link href="/api-docs" className="underline underline-offset-4">
+            API
+          </Link>
 
           <section className="grid gap-4 md:grid-cols-3">
             <Card>

@@ -74,7 +74,7 @@
     "overviewTitle": "Overview",
     "overviewDesc": "All endpoints are dynamic and return fresh data (no-store).",
     "baseUrlTitle": "Base URL",
-    "baseUrlDesc": "Use the same origin as the app (e.g. http://localhost:3000).",
+    "baseUrlDesc": "Use the same origin as the app (e.g. https://mail.rainode.com).",
     "addressEncodingTitle": "Address encoding",
     "addressEncodingDesc": "Path parameter :address must be URL-encoded.",
     "retentionTitle": "Retention",

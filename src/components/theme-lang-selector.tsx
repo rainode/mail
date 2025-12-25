@@ -41,7 +41,7 @@ export function ThemeLangSelector() {
   };
 
   return (
-    <div className="flex items-center gap-2 rounded-md border bg-background/80 p-2 backdrop-blur">
+    <div className="flex items-center">
       <div className="flex items-center gap-2">
         <span className="sr-only">{t("language")}</span>
         <Select value={locale} onValueChange={changeLocale}>

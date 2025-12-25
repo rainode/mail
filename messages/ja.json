@@ -74,7 +74,7 @@
     "overviewTitle": "概要",
     "overviewDesc": "すべてのエンドポイントは動的で、常に最新データを返します（no-store）。",
     "baseUrlTitle": "ベース URL",
-    "baseUrlDesc": "アプリと同じオリジンを使います（例: http://localhost:3000）。",
+    "baseUrlDesc": "アプリと同じオリジンを使います（例: https://mail.rainode.com）。",
     "addressEncodingTitle": "アドレスのエンコード",
     "addressEncodingDesc": "パスパラメータ :address は URL エンコードしてください。",
     "retentionTitle": "保持期間",

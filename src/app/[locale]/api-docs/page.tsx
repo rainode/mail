@@ -123,7 +123,7 @@ export default async function ApiDocsPage() {
                 <div className="space-y-2">
                   <div className="font-medium">{t("example")}</div>
                   <CodeBlock>
-                    {`curl "http://localhost:3000/api/emails/test%40example.site?page=1&pageSize=20"`}
+                    {`curl "https://mail.rainode.com/api/emails/test%40example.site?page=1&pageSize=20"`}
                   </CodeBlock>
                 </div>
               </CardContent>
@@ -155,7 +155,7 @@ export default async function ApiDocsPage() {
                 <div className="space-y-2">
                   <div className="font-medium">{t("example")}</div>
                   <CodeBlock>
-                    {`curl "http://localhost:3000/api/emails/test%40rainode.com/EMAIL_ID"`}
+                    {`curl "https://mail.rainode.com/api/emails/test%40rainode.com/EMAIL_ID"`}
                   </CodeBlock>
                 </div>
               </CardContent>
