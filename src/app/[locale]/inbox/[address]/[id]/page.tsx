@@ -1,7 +1,8 @@
+import { EmailDetailClient } from "@/components/email-detail-client";
+import { redirect } from "@/i18n/navigation";
+import { mailStorage } from "@/lib/mail-storage";
 import { unstable_noStore as noStore } from "next/cache";
 import { notFound } from "next/navigation";
-import { EmailDetailClient } from "@/components/email-detail-client";
-import { mailStorage } from "@/lib/mail-storage";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -14,8 +15,12 @@ export default async function EmailDetailPage({
 }) {
   noStore();
 
-  const { address, id } = await params;
+  const { locale, address, id } = await params;
   const decodedAddress = decodeURIComponent(address);
+
+  if (decodedAddress.endsWith("@rainode.com")) {
+    redirect({ href: "/", locale });
+  }
 
   const email = await mailStorage.getEmail(decodedAddress, id);
 

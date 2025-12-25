@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation";
+import { redirect } from "@/i18n/navigation";
 import { defaultLocale } from "@/i18n/routing";
 
 export default async function InboxPage({
@@ -7,5 +7,8 @@ export default async function InboxPage({
   params: Promise<{ address: string }>;
 }) {
   const { address } = await params;
-  redirect(`/${defaultLocale}/inbox/${encodeURIComponent(address)}`);
+  redirect({
+    href: `/inbox/${encodeURIComponent(address)}`,
+    locale: defaultLocale || "en",
+  });
 }

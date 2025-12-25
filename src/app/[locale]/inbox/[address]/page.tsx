@@ -1,6 +1,7 @@
-import { unstable_noStore as noStore } from "next/cache";
 import { InboxClient } from "@/components/inbox-client";
+import { redirect } from "@/i18n/navigation";
 import { mailStorage } from "@/lib/mail-storage";
+import { unstable_noStore as noStore } from "next/cache";
 
 type Email = {
   id: string;
@@ -29,8 +30,12 @@ export default async function InboxPage({
 }) {
   noStore();
 
-  const { address } = await params;
+  const { locale, address } = await params;
   const decodedAddress = decodeURIComponent(address);
+
+  if (decodedAddress.endsWith("@rainode.com")) {
+    redirect({ href: "/", locale });
+  }
 
   const sp = (await searchParams) ?? {};
   const pageParam = Array.isArray(sp.page) ? sp.page[0] : sp.page;
