@@ -30,7 +30,7 @@ export default async function Home() {
 
           <EmailGenerator />
 
-          <Link href="/api-docs" className="underline underline-offset-4 mx-4">
+          <Link href="/api-docs" className="underline underline-offset-4 my-4">
             API
           </Link>
 
