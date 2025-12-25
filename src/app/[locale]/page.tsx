@@ -1,4 +1,4 @@
-import { ArrowRight, Link, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Mail, Sparkles } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { EmailGenerator } from "@/components/email-generator";
@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export default async function Home() {
   const t = await getTranslations("Home");
