@@ -2,10 +2,6 @@ import { unstable_noStore as noStore } from "next/cache";
 import { InboxClient } from "@/components/inbox-client";
 import { mailStorage } from "@/lib/mail-storage";
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
-export const runtime = "nodejs";
-
 type Email = {
   id: string;
   to: string;

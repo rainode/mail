@@ -66,5 +66,32 @@
     "minutesAgo": "{count}分前",
     "hoursAgo": "{count}時間前",
     "daysAgo": "{count}日前"
+  },
+  "ApiDocs": {
+    "title": "API ドキュメント",
+    "subtitle": "このアプリが利用するエンドポイントとリクエスト/レスポンス形式です。",
+    "backHome": "戻る",
+    "overviewTitle": "概要",
+    "overviewDesc": "すべてのエンドポイントは動的で、常に最新データを返します（no-store）。",
+    "baseUrlTitle": "ベース URL",
+    "baseUrlDesc": "アプリと同じオリジンを使います（例: http://localhost:3000）。",
+    "addressEncodingTitle": "アドレスのエンコード",
+    "addressEncodingDesc": "パスパラメータ :address は URL エンコードしてください。",
+    "retentionTitle": "保持期間",
+    "retentionDesc": "メールは約 1 時間で自動削除されます。",
+    "endpointsTitle": "エンドポイント",
+    "request": "リクエスト",
+    "query": "クエリ",
+    "response": "レスポンス",
+    "responses": "レスポンス",
+    "example": "例",
+    "inboundDesc": "RFC822 形式の生メールを取り込み、保存します。",
+    "inboundReqBody": "本文: 生メールテキスト（RFC822 / .eml）。",
+    "listDesc": "宛先アドレスのメール一覧をページングで取得します。",
+    "pageQuery": "ページ番号（既定 1）。",
+    "pageSizeQuery": "1ページの件数（既定 20、最小 1、最大 100）。",
+    "detailDesc": "id を指定して単一メールを取得します。",
+    "detail200": "Email オブジェクト。",
+    "detail404": "{error: \"Email not found\"}"
   }
 }

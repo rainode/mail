@@ -66,5 +66,32 @@
     "minutesAgo": "{count, plural, one {# minute ago} other {# minutes ago}}",
     "hoursAgo": "{count, plural, one {# hour ago} other {# hours ago}}",
     "daysAgo": "{count, plural, one {# day ago} other {# days ago}}"
+  },
+  "ApiDocs": {
+    "title": "API docs",
+    "subtitle": "Endpoints and request/response formats used by this app.",
+    "backHome": "Back",
+    "overviewTitle": "Overview",
+    "overviewDesc": "All endpoints are dynamic and return fresh data (no-store).",
+    "baseUrlTitle": "Base URL",
+    "baseUrlDesc": "Use the same origin as the app (e.g. http://localhost:3000).",
+    "addressEncodingTitle": "Address encoding",
+    "addressEncodingDesc": "Path parameter :address must be URL-encoded.",
+    "retentionTitle": "Retention",
+    "retentionDesc": "Emails are automatically deleted after about 1 hour.",
+    "endpointsTitle": "Endpoints",
+    "request": "Request",
+    "query": "Query",
+    "response": "Response",
+    "responses": "Responses",
+    "example": "Example",
+    "inboundDesc": "Ingest a raw RFC822 email source and store it.",
+    "inboundReqBody": "Body: raw email text (RFC822 / .eml).",
+    "listDesc": "List emails for a recipient address with pagination.",
+    "pageQuery": "Page number (default 1).",
+    "pageSizeQuery": "Items per page (default 20, min 1, max 100).",
+    "detailDesc": "Get a single email by id.",
+    "detail200": "Email object.",
+    "detail404": "{error: \"Email not found\"}"
   }
 }
