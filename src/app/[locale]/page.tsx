@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 export default async function Home() {
   const t = await getTranslations("Home");
@@ -30,7 +30,7 @@ export default async function Home() {
 
           <EmailGenerator />
 
-          <Link href="/api-docs" className="underline underline-offset-4">
+          <Link href="/api-docs" className="underline underline-offset-4 mx-4">
             API
           </Link>
 
