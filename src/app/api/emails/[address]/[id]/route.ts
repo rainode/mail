@@ -1,5 +1,5 @@
-import type { NextRequest } from "next/server";
 import { mailStorage } from "@/lib/mail-storage";
+import type { NextRequest } from "next/server";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -10,6 +10,13 @@ export async function GET(
 ) {
   const { address, id } = await params;
   const decodedAddress = decodeURIComponent(address);
+
+  if (decodedAddress.endsWith("@rainode.com")) {
+    return Response.json(
+      JSON.stringify({ message: "This domain is currently not available." }),
+      { status: 400 },
+    );
+  }
 
   const email = await mailStorage.getEmail(decodedAddress, id);
 
