@@ -9,6 +9,8 @@ export async function POST(req: Request) {
 
     const email = await mailStorage.addEmail(raw);
 
+    console.log(email.from)
+
     return new Response("ok", { status: 200 });
   } catch (error) {
     console.error("Error processing email:", error);

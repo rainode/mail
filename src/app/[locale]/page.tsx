@@ -42,7 +42,7 @@ export default async function Home() {
                   <CardTitle>{t("card1Title")}</CardTitle>
                 </div>
                 <CardDescription>{t("card1Desc")}</CardDescription>
-              </CardHeader>
+              </CardHeader> 
             </Card>
 
             <Card>
